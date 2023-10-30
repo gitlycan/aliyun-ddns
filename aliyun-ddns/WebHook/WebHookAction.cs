@@ -36,7 +36,9 @@ namespace aliyun_ddns.WebHook
                     text = new
                     {
                         content = textBuilder.ToString()
-                    }
+                    },
+                    title = "NAS IP发生了变化",
+                    desp = text
                 };
 
                 string content = JsonConvert.SerializeObject(o);
